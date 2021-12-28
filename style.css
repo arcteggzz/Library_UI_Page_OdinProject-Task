@@ -2,10 +2,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* font for the whole doc */
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  /* font for the whole doc */
-  font-family: Roboto, sans-serif;
   width: 100%;
 }
+
+/*Header Styling Start*/
+header {
+  width: 100%;
+  padding: 15px;
+  border: solid red 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  max-width: 10%;
+  height: auto;
+}
+
+/*Header Styling Stop*/
