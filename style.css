@@ -14,7 +14,6 @@ body {
 header {
   width: 100%;
   padding: 15px;
-  border: solid red 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,4 +25,130 @@ header img {
   height: auto;
 }
 
+header h1 {
+  font-weight: 700;
+  font-size: 44px;
+}
 /*Header Styling Stop*/
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*Form Styling Starts*/
+form {
+  background: rgb(241, 241, 241);
+  width: 35%;
+  padding: 48px;
+  box-shadow: 4px 4px 1px 1px rgba(150, 150, 150, 0.2);
+}
+
+form h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 0 0;
+}
+
+.input-field label {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.input-field input,
+.input-field textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(90, 90, 90);
+  background: white;
+  width: 100%;
+  padding: 6px 0 6px 16px;
+  border: none;
+  margin-top: 8px;
+}
+
+#description {
+  height: 200px;
+  vertical-align: text-top;
+  padding: 16px 0 0px 16px;
+  resize: none;
+}
+
+form button {
+  background: rgb(160, 173, 153);
+  border: none;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 32px;
+}
+/*Form Styling Stops*/
+
+.library-display {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.book-card {
+  width: 300px;
+  height: 420px;
+  background: rgb(241, 241, 241);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 1px 1px rgba(150, 150, 150, 0.2);
+}
+
+.book-card h3,
+.book-card-h3 {
+  margin: 8px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.book-card p,
+.book-card-p {
+  margin: 20px 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  height: 180px;
+}
+
+.book-card .read {
+  width: 100%;
+  border: none;
+  background: rgb(94, 190, 42);
+  color: white;
+  padding: 6px 0;
+  margin-bottom: 16px;
+}
+
+.book-card .delete {
+  width: 100%;
+  border: none;
+  background: rgb(189, 43, 43);
+  color: white;
+  padding: 6px 0;
+}
