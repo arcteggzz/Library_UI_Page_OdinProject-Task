@@ -70,7 +70,8 @@ form h2 {
 }
 
 .input-field input,
-.input-field textarea {
+.input-field textarea,
+.input-field select {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -119,6 +120,13 @@ form button {
   box-shadow: 4px 4px 1px 1px rgba(150, 150, 150, 0.2);
 }
 
+.book-card h2,
+.book-card-h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .book-card h3,
 .book-card-h3 {
   margin: 8px 0;
@@ -140,6 +148,15 @@ form button {
   width: 100%;
   border: none;
   background: rgb(94, 190, 42);
+  color: white;
+  padding: 6px 0;
+  margin-bottom: 16px;
+}
+
+.book-card .unread {
+  width: 100%;
+  border: none;
+  background: rgb(226, 85, 80);
   color: white;
   padding: 6px 0;
   margin-bottom: 16px;

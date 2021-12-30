@@ -34,8 +34,10 @@
           </div>
           <div class="input-field">
             <label for="status">Status</label>
-            <input type="radio" name="status" value="true" /> Read
-            <input type="radio" name="status" value="false" /> Unread
+            <select name="status" id="status">
+              <option value="Read">Finished</option>
+              <option value="Unread">Ongoing</option>
+            </select>
           </div>
           <div class="input-field">
             <label for="description">Book description</label>
@@ -46,64 +48,11 @@
               id="description"
             ></textarea>
           </div>
-          <button>Add book to Library</button>
+          <button id="submit">Add book to Library</button>
         </form>
-        <div class="library-display">
-          <div class="book-card">
-            <h2>Book Name</h2>
-            <h3>Author Name</h3>
-            <h3>Page Number</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              facere minima, eos debitis velit qui delectus animi repellendus
-              repellat illum vitae distinctio laborum unde, at eius quis.
-              Placeat, a voluptas?
-            </p>
-            <button class="read">Read</button>
-            <button class="delete">Delete book</button>
-          </div>
-          <div class="book-card">
-            <h2>Book Name</h2>
-            <h3>Author Name</h3>
-            <h3>Page Number</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              facere minima, eos debitis velit qui delectus animi repellendus
-              repellat illum vitae distinctio laborum unde, at eius quis.
-              Placeat, a voluptas?
-            </p>
-            <button class="read">Read</button>
-            <button class="delete">Delete book</button>
-          </div>
-          <div class="book-card">
-            <h2>Book Name</h2>
-            <h3>Author Name</h3>
-            <h3>Page Number</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              facere minima, eos debitis velit qui delectus animi repellendus
-              repellat illum vitae distinctio laborum unde, at eius quis.
-              Placeat, a voluptas?
-            </p>
-            <button class="read">Read</button>
-            <button class="delete">Delete book</button>
-          </div>
-          <div class="book-card">
-            <h2>Book Name</h2>
-            <h3>Author Name</h3>
-            <h3>Page Number</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              facere minima, eos debitis velit qui delectus animi repellendus
-              repellat illum vitae distinctio laborum unde, at eius quis.
-              Placeat, a voluptas?
-            </p>
-            <button class="read">Read</button>
-            <button class="delete">Delete book</button>
-          </div>
-        </div>
+        <div class="library-display" id="libraryDisplay"></div>
       </div>
     </div>
-    <script src="app.js"></script>
   </body>
+  <script src="app.js"></script>
 </html>
